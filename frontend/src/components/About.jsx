@@ -7,7 +7,7 @@ const About = () => {
       <div className="text-white font-bold text-3xl text-center font-serif  ">
         About Us
       </div>
-      <span className="flex justify-center lg:justify-start pt-16">
+      <span className="flex flex-wrap justify-center lg:justify-start  pt-16">
         <p className="my-2 max-w-xl pl-10 py-6 text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quam
           eum eveniet reiciendis harum odit aperiam dolores eaque obcaecati

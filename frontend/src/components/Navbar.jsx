@@ -51,7 +51,7 @@ const Navbar = () => {
               <li className="text-2xl">HOME</li>
             </NavLink>
 
-            {["ABOUT", "ARTISTS", "SERVICES", "EVENTS", "CONTACT"].map(
+            {["ABOUT", "ARTISTS","MIXTAPES", "SERVICES", "EVENTS", "CONTACT"].map(
               (item, index) => (
                 <NavLink
                   key={index}
