@@ -11,7 +11,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter} from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";         
+import { FaTiktok } from "react-icons/fa";  
+import { motion } from "framer-motion";       
 
 
 
@@ -41,7 +42,7 @@ const Artists = () => {
               alt=""
             />              
           </div>
-          <span className="flex gap-7 py-6">
+          <motion.span  className="flex gap-7 py-6">
             <a href="">
               <FaInstagram className="text-white text-3xl" />
             </a>
@@ -59,7 +60,7 @@ const Artists = () => {
             <a href="">
               <FaFacebook className="text-white text-3xl" />
             </a>
-          </span>
+          </motion.span>
         </div>
         <div className="  px-10 border-2 py-4 border-gray-400">
           <h2 className="text-white mb-5 ">WIZZYDRUMZ</h2>

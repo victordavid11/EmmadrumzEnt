@@ -69,7 +69,7 @@ const Home = () => {
         <button
           onClick={prevSlide}
           className="absolute top-1/2 left-4 -translate-y-1/2 p-3 bg-gray-800 text-white rounded-full"
-        >
+        >  
           ❮
         </button>
 

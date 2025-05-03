@@ -17,7 +17,7 @@ const Mixtapes = () => {
                 src={item.img}
                 alt="dd"
               />
-              <a href={item.audio} className="text-white font-semibold border-2 border-gray-400 rounded p-1  text-lg mt-2">
+              <a href={item.audio} className="text-white font-semibold border-2 border-gray-400 rounded p-1 px-4  text-lg mt-2">
                 {item.desc}
               </a>
             </div>
