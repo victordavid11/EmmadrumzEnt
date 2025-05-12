@@ -4,6 +4,8 @@ import wizzyvid from '../assets/1232.mp4';
 import { useState, useEffect } from "react";
 import emmavid2 from '../assets/1229m.mp4';
 import wizzyvid2 from '../assets/0104.mp4';
+import samVid from '../assets/0503i.mp4';
+import samVid2 from '../assets/0503.mp4';
 import About  from "./About";
 import Artists from "./Artists";
 import Services from "./Services";
@@ -13,9 +15,9 @@ import Navbar from "./Navbar";
 
 
 
-const slides = [emmavid, wizzyvid]
+const slides = [emmavid, wizzyvid, samVid]
 
-const mobileSlide = [emmavid2, wizzyvid2]
+const mobileSlide = [emmavid2, wizzyvid2, samVid2]
 
 
 const Home = () => {
@@ -45,7 +47,11 @@ const Home = () => {
 
   return (
     <>
-      <div className="relative w-full  h-screen   overflow-hidden">
+      <div
+        className={`relative w-full h-screen overflow-hidden ${
+          theMobile ? "pt-20" : ""
+        }`}
+      >
         <div
           className="flex transition-transform duration-700 ease-in-out"
           style={{ transform: `translateX(-${current * 100}%)` }}
@@ -64,12 +70,11 @@ const Home = () => {
           ))}
         </div>
 
-
-       {/* slide button  */}
+        {/* slide button  */}
         <button
           onClick={prevSlide}
           className="absolute top-1/2 left-4 -translate-y-1/2 p-3 bg-gray-800 text-white rounded-full"
-        >  
+        >
           ❮
         </button>
 
@@ -92,8 +97,8 @@ const Home = () => {
           ))}
         </div>
       </div>
-
-      {/* <About/>
+      {/* 
+      <About/>
       <Artists/> */}
     </>
   );

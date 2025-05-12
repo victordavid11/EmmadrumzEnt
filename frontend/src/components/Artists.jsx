@@ -17,8 +17,22 @@ import { motion } from "framer-motion";
 
 
 const Artists = () => {
+
+  const iconVariants = (duration) => ({
+    initial: { y: -5 },
+    animate: {
+      y: [5, -5],
+      transition: {
+        duration: duration,
+        else: "linear",
+        repeat: Infinity,
+        repeatType: "reverse",
+      },
+    },
+  });
+
   return (
-    <div className="relative bg-black pt-20  ">
+    <motion.div animate={{ x: 0 }} initial={{ x: 500 }} className="relative bg-black pt-20  ">
       <div className="text-white text-3xl font-bold text-center mb-4 ">
         Artists
       </div>
@@ -40,27 +54,52 @@ const Artists = () => {
               className=" top-0 left-0 absolute mb-2 h-80  opacity-0 group-hover:opacity-100 transition-opacity duration-500 "
               src={emma}
               alt=""
-            />              
+            />
           </div>
-          <motion.span  className="flex gap-7 py-6">
-            <a href="">
+          <span className="flex gap-7 py-6">
+            <motion.a
+              variants={iconVariants(1.5)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaInstagram className="text-white text-3xl" />
-            </a>
+            </motion.a>
 
-            <a href="">
+            <motion.a
+              variants={iconVariants(1.7)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaYoutube className="text-white text-3xl" />
-            </a>
-            <a href="">
+            </motion.a>
+            <motion.a
+              variants={iconVariants(1.9)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaTiktok className="text-white text-3xl" />
-            </a>
-            <a href="">
+            </motion.a>
+            <motion.a
+              variants={iconVariants(2.1)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaXTwitter className="text-white text-3xl" />
-            </a>
+            </motion.a>
 
-            <a href="">
+            <motion.a
+              variants={iconVariants(2.3)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaFacebook className="text-white text-3xl" />
-            </a>
-          </motion.span>
+            </motion.a>
+          </span>
         </div>
         <div className="  px-10 border-2 py-4 border-gray-400">
           <h2 className="text-white mb-5 ">WIZZYDRUMZ</h2>
@@ -83,23 +122,48 @@ const Artists = () => {
           </div>
 
           <span className="flex gap-7 py-6">
-            <a href="">
+            <motion.a
+              variants={iconVariants(1.5)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaInstagram className="text-white text-3xl" />
-            </a>
+            </motion.a>
 
-            <a href="">
+            <motion.a
+              variants={iconVariants(1.7)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaYoutube className="text-white text-3xl" />
-            </a>
-            <a href="">
+            </motion.a>
+            <motion.a
+              variants={iconVariants(1.9)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaTiktok className="text-white text-3xl" />
-            </a>
-            <a href="">
+            </motion.a>
+            <motion.a
+              variants={iconVariants(2.1)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaXTwitter className="text-white text-3xl" />
-            </a>
+            </motion.a>
 
-            <a href="">
+            <motion.a
+              variants={iconVariants(2.3)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaFacebook className="text-white text-3xl" />
-            </a>
+            </motion.a>
           </span>
         </div>
         <div className="  px-10 border-2 py-4 border-gray-400">
@@ -121,23 +185,48 @@ const Artists = () => {
               alt=""
             />
             <span className="flex gap-7 py-6">
-              <a href="">
+              <motion.a
+                variants={iconVariants(1.5)}
+                initial="initial"
+                animate="animate"
+                href=""
+              >
                 <FaInstagram className="text-white text-3xl" />
-              </a>
+              </motion.a>
 
-              <a href="">
+              <motion.a
+                variants={iconVariants(1.7)}
+                initial="initial"
+                animate="animate"
+                href=""
+              >
                 <FaYoutube className="text-white text-3xl" />
-              </a>
-              <a href="">
+              </motion.a>
+              <motion.a
+                variants={iconVariants(1.9)}
+                initial="initial"
+                animate="animate"
+                href=""
+              >
                 <FaTiktok className="text-white text-3xl" />
-              </a>
-              <a href="">
+              </motion.a>
+              <motion.a
+                variants={iconVariants(2.1)}
+                initial="initial"
+                animate="animate"
+                href=""
+              >
                 <FaXTwitter className="text-white text-3xl" />
-              </a>
+              </motion.a>
 
-              <a href="">
+              <motion.a
+                variants={iconVariants(2.3)}
+                initial="initial"
+                animate="animate"
+                href=""
+              >
                 <FaFacebook className="text-white text-3xl" />
-              </a>
+              </motion.a>
             </span>
           </div>
         </div>
@@ -161,27 +250,52 @@ const Artists = () => {
             />
           </div>
           <span className="flex gap-7 py-6">
-            <a href="">
+            <motion.a
+              variants={iconVariants(1.5)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaInstagram className="text-white text-3xl" />
-            </a>
+            </motion.a>
 
-            <a href="">
+            <motion.a
+              variants={iconVariants(1.7)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaYoutube className="text-white text-3xl" />
-            </a>
-            <a href="">
+            </motion.a>
+            <motion.a
+              variants={iconVariants(1.9)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaTiktok className="text-white text-3xl" />
-            </a>
-            <a href="">
+            </motion.a>
+            <motion.a
+              variants={iconVariants(2.1)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaXTwitter className="text-white text-3xl" />
-            </a>
+            </motion.a>
 
-            <a href="">
+            <motion.a
+              variants={iconVariants(2.3)}
+              initial="initial"
+              animate="animate"
+              href=""
+            >
               <FaFacebook className="text-white text-3xl" />
-            </a>
+            </motion.a>
           </span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
